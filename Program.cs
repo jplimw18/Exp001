@@ -16,7 +16,7 @@ namespace Desafio001 {
             List<Tuple<int, int, int>> arr = new List<Tuple<int, int, int>>();
             int menor = 0, posX = 0, posY = 0;
 
-            for (int i = 0, k = 0; i < nums.Length; i++, k++) {
+            for (int i = 0; i < nums.Length; i++) {
                 for (int j = i + 1; j < nums.Length; j++) {
                     if (j - 1 == i) {
                         menor = Math.Abs(nums[i] - nums[j]);
@@ -33,7 +33,7 @@ namespace Desafio001 {
                 }
 
                 if (!arr.Contains(new Tuple<int, int, int>(menor, posX, posY))) {
-                    if (k == 0) {
+                    if (i == 0) {
                         arr.Add(new Tuple<int, int, int>(menor, posX, posY));
                     }
                     else if (arr.Last().Item1 > menor) {
