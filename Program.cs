@@ -4,10 +4,10 @@ namespace Desafio001 {
     class Program {
         static void Main(string[] args) {
             int[] nums = { 1, 2, 3, 4 }; // --> output: "1 2"\n"2 3"\n"3 4"
-                                         //nums = new int[] { 5, -2, 12, 3 }; // --> output: "5 3"
-                                         //nums = new int[] { 1, 2, 9 }; // --> output: "1 2"
-                                         //nums = new int[] { -1, -5, 1 }; // --> output: "-1 1"
-                                         //nums = new int[] { 0, 19, 13 }; // --> output: "19 13"
+             //nums = new int[] { 5, -2, 12, 3 }; // --> output: "5 3"
+             //nums = new int[] { 1, 2, 9 }; // --> output: "1 2"
+             //nums = new int[] { -1, -5, 1 }; // --> output: "-1 1"
+             //nums = new int[] { 0, 19, 13 }; // --> output: "19 13"
 
             Pares(nums);
         }
